@@ -1,0 +1,30 @@
+{
+    "name":"Gmeet auto exit",
+    "description":"This extension is to auto exit based on particular time",
+    "version": "0.1.0",
+    "manifest_version":2,
+    "icons":
+    {
+        "64":"./icons8-google-meet-64.png",
+        "128":"./icons8-google-meet-128.png"
+
+    },
+    "background":
+    {
+        "scripts":["./background.js"]
+    },
+    "options_page":"./options.html",
+    "browser_action":{
+        "default_popup":"popup.html"
+    },
+    "permissions":[
+        "tabs",
+        "https://www.google.com/*",
+        "https://www.meet.google.com/*",
+        "*://*.google.com/*",
+        "storage",
+        "notifications"
+    ]
+
+
+}
